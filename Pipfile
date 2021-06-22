@@ -7,6 +7,10 @@ name = "pypi"
 django = "*"
 djangorestframework = "*"
 django-cors-headers = "*"
+pandas = "*"
+spacy = "*"
+nltk = "*"
+sklearn = "*"
 
 [dev-packages]
 

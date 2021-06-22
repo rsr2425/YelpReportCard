@@ -7,4 +7,7 @@ from .models import Review
 
 class ReviewView(viewsets.ModelViewSet):
     serializer_class = ReviewSerializer
-    queryset = Review.objects.all()
+    # queryset = Review.objects.all()
+    
+    def get_queryset(self):
+        return Review.objects.grade_reviews(Review.objects.all())

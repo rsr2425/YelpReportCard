@@ -20,6 +20,7 @@ from grade import views
 
 router = routers.DefaultRouter()
 router.register(r'reviews', views.ReviewView, 'review')
+# router.register(r'grade_reviews', views.GradeView, 'grade_review')
 
 urlpatterns = [
     path('admin/', admin.site.urls),
